@@ -10,8 +10,8 @@
    While a line is empty (""), the footer shows
    "LinkedIn – link coming soon" instead of a broken link.   */
 const SOCIAL_LINKS = {
-  linkedin: "",   // e.g. "https://www.linkedin.com/in/your-profile"
-  github: ""      // e.g. "https://github.com/your-username"
+  linkedin: "https://www.linkedin.com/in/chika-urowayino-nduaguba-b16028216/",   // e.g. "https://www.linkedin.com/in/your-profile"
+  github: "https://github.com/chikaurowayino-hub"      // e.g. "https://github.com/your-username"
 };
 
 /* This function looks for every <a data-social="..."> on the page
