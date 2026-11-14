@@ -32,7 +32,7 @@ portfolio-website/
 | Your own intro video | Save as `media/intro.mp4`, then change `intro-placeholder.mp4` to `intro.mp4` in `media.html` |
 | Project screenshots | Copy into `images/`, then replace the illustration in `projects.html` |
 | Personal interests | `about.html`, section "Professional and Personal Interests" – copy a card and edit |
-| Colours | `:root { ... }` at the top of `css/style.css` |
+| Colours | `:root { ... }` (light mode) and `:root[data-theme="dark"]` (dark mode) at the top of `css/style.css` |
 
 ## 3. Upload to GitHub
 1. Create a new empty repository on github.com (e.g. `portfolio-website`).
@@ -62,6 +62,7 @@ The visitor's phone number is collected only in the form submission; it is never
 
 ## 6. How the main parts work
 - **Navigation:** the same `<nav>` is in every page. `aria-current="page"` highlights the current link; the ☰ button toggles the class `open` (main.js).
+- **Light/Dark mode:** a tiny script in each page's `<head>` applies the saved theme before the page appears. The nav button (main.js, section 4) switches `data-theme` on `<html>` and saves the choice in localStorage under `chika-theme`. In `style.css`, dark mode only changes colour variables, so the layout never changes.
 - **Planner:** tasks live in an array. Add/complete/delete change the array → `saveTasks()` stores it in localStorage → `render()` redraws the list and counters.
 - **Contact:** `checkField()` tests each field; `validateAll()` runs all four; only a valid form is sent.
 - **Media:** `media.js` loops over the arrays in `media-data.js` and creates one card per item. A YouTube thumbnail loads the real player only when clicked.

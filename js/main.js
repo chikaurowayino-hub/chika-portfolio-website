@@ -10,8 +10,8 @@
    While a line is empty (""), the footer shows
    "LinkedIn – link coming soon" instead of a broken link.   */
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/chika-urowayino-nduaguba-b16028216/",   // e.g. "https://www.linkedin.com/in/your-profile"
-  github: "https://github.com/chikaurowayino-hub"      // e.g. "https://github.com/your-username"
+  linkedin: "https://www.linkedin.com/in/chika-urowayino-nduaguba-b16028216/",
+  github: "https://github.com/chikaurowayino-hub"
 };
 
 /* This function looks for every <a data-social="..."> on the page
@@ -66,3 +66,56 @@ document.addEventListener("DOMContentLoaded", function () {
   setupMenu();
   setFooterYear();
 });
+
+/* ==========================================================
+   4. LIGHT / DARK MODE
+   The tiny script in each page's <head> already applied the saved
+   theme before the page appeared. This code makes the button work:
+   - toggles data-theme on <html> ("light" or "dark")
+   - saves the choice in localStorage so every page remembers it
+   - updates the button's accessible label and text
+   ========================================================== */
+const THEME_KEY = "chika-theme";
+
+function currentTheme() {
+  return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+}
+
+/* Update the button text and screen-reader label to describe the NEXT action */
+function updateThemeButton() {
+  const button = document.querySelector(".theme-toggle");
+  if (!button) return;
+  const isDark = currentTheme() === "dark";
+  button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  button.querySelector(".theme-label").textContent = isDark ? "Light" : "Dark";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  updateThemeButton();
+}
+
+function setupThemeToggle() {
+  const button = document.querySelector(".theme-toggle");
+  if (!button) return;
+  updateThemeButton();
+
+  button.addEventListener("click", function () {
+    const next = currentTheme() === "dark" ? "light" : "dark";
+
+    /* Add a helper class for a moment so colours fade smoothly */
+    const root = document.documentElement;
+    root.classList.add("theme-transition");
+    applyTheme(next);
+    window.setTimeout(function () { root.classList.remove("theme-transition"); }, 450);
+
+    try { localStorage.setItem(THEME_KEY, next); } catch (error) { /* storage blocked: still works for this page */ }
+  });
+
+  /* If the theme is changed in another open tab, follow it */
+  window.addEventListener("storage", function (event) {
+    if (event.key === THEME_KEY) applyTheme(event.newValue === "dark" ? "dark" : "light");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", setupThemeToggle);
