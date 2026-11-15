@@ -45,18 +45,25 @@
   </header>
 
   <main id="main">
-    <section class="page-banner"><div class="container"><h1>Projects</h1><p>A flagship long-term project and two practical ones.</p></div></section>
+    <section class="page-banner"><div class="container"><h1>Projects</h1><p>A long-term project and two practical ones.</p></div></section>
 
     <section class="section" id="ai-wastewater-guardian">
       <div class="container">
         <article class="project flagship">
           <div class="project-body">
             <span class="badge">Under development · Long-term vision</span>
-            <h2 style="margin-top:.6rem;font-size:1.8rem">AI Wastewater Guardian</h2>
-            <p>My flagship long-term technology project. It is a concept for applying AI to industrial wastewater treatment. It is <strong>not a completed product</strong>: it represents where I am heading, and I will update this page as it progresses.</p>
+            <h2>AI Wastewater Guardian — Intelligent Wastewater Monitoring and Early-Warning System</h2>
+
+<p>An ongoing project exploring how data analytics and artificial intelligence can support wastewater treatment monitoring and provide early warnings of potential process instability.</p>
             <div class="grid grid-2" style="align-items:center;margin-top:1rem">
-              <div class="featured-art" style="border-radius:12px"><svg viewBox="0 0 320 200" role="img" aria-label="Illustration: reactor and warning trend"><rect x="20" y="40" width="100" height="130" rx="10" fill="#13315c" stroke="#3ec1c4" stroke-width="3"/><path d="M20 105 q25 -12 50 0 t50 0 V160 a10 10 0 0 1 -10 10 H30 a10 10 0 0 1 -10 -10z" fill="#0f8b8d" opacity=".75"/><path d="M120 95 H150" stroke="#3ec1c4" stroke-width="3" stroke-dasharray="5 5"/><rect x="155" y="30" width="150" height="120" rx="10" fill="#0b2545" stroke="#3e6fb0" stroke-width="2"/><polyline points="168,125 195,118 220,122 245,95 270,82 295,55" fill="none" stroke="#8fd9d4" stroke-width="3"/><line x1="168" y1="78" x2="295" y2="78" stroke="#f0b429" stroke-width="2" stroke-dasharray="6 5"/><circle cx="295" cy="55" r="6" fill="#f0b429"/></svg></div>
-              <p class="label-illus" style="text-align:left;font-size:.85rem">Illustration, not an actual screenshot. Real screenshots will replace it as the project develops.</p>
+              <div class="featured-art" style="border-radius:12px">
+  <img
+    src="images/ai-wastewater-guardian.png"
+    alt="AI Wastewater Guardian dashboard showing anaerobic reactor monitoring and early-warning indicators"
+    style="width:100%;height:auto;display:block;border-radius:12px"
+  >
+</div>
+              
             </div>
             <div class="meta-grid">
               <div><h4>Problem statement</h4><p>Anaerobic reactors can become unstable gradually. Small changes in operating data may be missed until the problem is serious, which is costly and can harm treatment performance.</p></div>
@@ -66,17 +73,32 @@
             </div>
             <h3>Development roadmap</h3>
             <ol class="roadmap">
-              <li class="done"><strong>Concept defined:</strong> problem and long-term vision described.</li>
-              <li><strong>Data foundations:</strong> learn Python, Pandas and NumPy for process data. <em>(in progress through my studies)</em></li>
-              <li><strong>Data analysis:</strong> explore trends in treatment parameters.</li>
-              <li><strong>Prototype model:</strong> test early-warning ideas on suitable data.</li>
-              <li><strong>Demonstration:</strong> share a working demo and documentation.</li>
+              <li class="done"><strong>Concept defined:</strong> Identified the need for early detection of anaerobic reactor instability.</li>
+             <li class="current"><strong>Data foundations:</strong> Building knowledge of Python, Pandas and NumPy for industrial process data analysis. <em>(in progress through my studies)</em></li>
+              <li class="done"><strong>Monitoring prototype:</strong> Developed an interactive dashboard using simulated reactor data and rule-based warning thresholds.</li>
+              <li class="done"><strong>Trend analysis:</strong> Implemented simulated historical trends for pH, VFA and alkalinity monitoring</li>
+              <li class="planned"><strong>Future developmen:</strong> Explore predictive analytics and machine learning using suitable operational datasets.</li>
             </ol>
             <div class="meta-grid">
-              <div><h4>Current status</h4><p>Under development: concept stage.</p></div>
-              <div class="placeholder-box"><strong>GitHub repository:</strong> placeholder. Add the link when the repository exists.</div>
-              <div class="placeholder-box"><strong>Technical documentation:</strong> placeholder. Coming as the project progresses.</div>
-              <div class="placeholder-box"><strong>Screenshots &amp; demo:</strong> placeholder. None available yet.</div>
+              <div><h4>Current status</h4><p>Prototype developed — simulated reactor monitoring and rule-based early-warning demonstration.</p></div>
+              <div class="placeholder-box">
+    <strong>Live dashboard:</strong>
+    <a href="https://ai-wastewater-guardian.netlify.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Open AI Wastewater Guardian
+    </a>
+</div>
+              <div class="placeholder-box">
+    <strong>GitHub repository:</strong>
+    <a href="https://github.com/chikaurowayino-hub/ai-wastewater-guardian"
+       target="_blank"
+       rel="noopener noreferrer">
+        View source code on GitHub
+    </a>
+</div>
+              <div class="placeholder-box"><strong>Technical documentation:</strong> Project documentation will be developed alongside the prototype, including system design, monitoring parameters and early-warning rules.</div>
+              <div class="placeholder-box"><strong>Screenshots &amp; demo:</strong> Working prototype screenshots available above. Interactive demonstration uses simulated reactor data and rule-based early warnings.</div>
             </div>
           </div>
         </article>
@@ -88,26 +110,58 @@
         <div class="section-head"><h2>More projects</h2></div>
         
         <article class="project" id="wastewater-analytics">
-          <div class="project-art"><svg viewBox="0 0 320 200" role="img" aria-label="Illustration of charts"><rect x="20" y="20" width="280" height="160" rx="8" fill="#0b2545" stroke="#3e6fb0" stroke-width="2"/><rect x="40" y="110" width="22" height="55" fill="#3ec1c4"/><rect x="72" y="85" width="22" height="80" fill="#3ec1c4"/><rect x="104" y="100" width="22" height="65" fill="#3ec1c4"/><rect x="136" y="60" width="22" height="105" fill="#3ec1c4"/><polyline points="190,140 215,110 240,120 265,60 285,75" fill="none" stroke="#8fd9d4" stroke-width="3"/><text x="40" y="45" fill="#c3d2e4" font-size="12" font-family="sans-serif">COD · BOD · pH · TSS</text></svg><p class="label-illus">Illustration, not a real screenshot</p></div>
+          <div class="project-art"><img
+  src="images/wastewater-dashboard.png"
+  alt="Wastewater Treatment Performance Dashboard showing water quality indicators and treatment performance"
+  class="project-screenshot"
+></div>
           <div class="project-body">
-            <span class="badge">Planned / in progress</span>
-            <h2 style="margin-top:.6rem;font-size:1.4rem">Wastewater Treatment Data Analytics</h2>
-            <p>A data analytics project on wastewater parameters such as COD, BOD, pH, TSS, dissolved oxygen, temperature and organic loading, aimed at spotting trends, monitoring treatment performance and producing useful operational reports.</p>
-            <ul class="tag-list"><li>Excel</li><li>Python</li><li>Pandas</li><li>SQL</li><li>Plotly</li></ul>
+            <span class="badge">Completed · Live demo available</span>
+            <h2 style="margin-top:.6rem;font-size:1.4rem">Wastewater Treatment Performance Dashboard</h2>
+            <p>An interactive wastewater treatment performance dashboard for monitoring key water quality parameters, including COD, BOD, TSS, pH, dissolved oxygen, temperature and flow rate. It provides performance indicators, trend visualisations, COD removal efficiency calculations, historical records and operational status alerts.</p>
+            <ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li><Netlify class="js"></Netlify>Chart.js</li></ul>
             <details class="more">
               <summary class="btn btn-outline">Project details</summary>
               <div class="details-body">
-                <p><strong>Problem:</strong> Treatment data is often recorded but not analysed in a way that shows trends and performance clearly.</p>
-                <p><strong>Proposed solution:</strong> Use Excel, Python, Pandas, SQL and Plotly to clean the data, analyse trends and build clear reports.</p>
-                <p><strong>Status:</strong> Planned / in progress</p>
-                <p class="placeholder-box">GitHub: placeholder. No repository link yet.</p>
+                <p><strong>Problem:</strong> Wastewater treatment operators need a clear way to monitor treatment performance, identify abnormal conditions and analyse water quality trends.</p>
+
+<p><strong>Solution:</strong> An interactive dashboard displaying key wastewater parameters, performance indicators, historical records and COD removal efficiency calculations.</p>
+
+<p><strong>Key features:</strong></p>
+<ul>
+  <li>Water quality monitoring for COD, BOD, TSS, pH, dissolved oxygen, temperature and flow rate.</li>
+  <li>Interactive charts and KPI cards.</li>
+  <li>COD removal efficiency calculator.</li>
+  <li>Historical data search and filtering.</li>
+  <li>Operational status indicators and input validation.</li>
+</ul>
+
+<p><strong>Technologies:</strong> HTML5, CSS3, JavaScript and Chart.js.</p>
+
+<p><strong>Data:</strong> Simulated data for demonstration purposes, not actual plant operational data.</p>
+
+<p><strong>Status:</strong> Completed and deployed.</p>
+
+<p><strong>Live dashboard:</strong>
+<a href="https://wastewater-treatment-performance-dash.netlify.app/" target="_blank" rel="noopener noreferrer">View dashboard</a></p>
+
+<p><strong>GitHub repository:</strong>
+<a href="https://github.com/chikaurowayino-hub/wastewater-treatment-performance-dashboard" target="_blank" rel="noopener noreferrer">View source code</a></p>
+                
+            </p>
               </div>
             </details>
           </div>
         </article>
         
         <article class="project" id="portfolio-website">
-          <div class="project-art"><svg viewBox="0 0 320 200" role="img" aria-label="Illustration of a website"><rect x="30" y="20" width="260" height="160" rx="8" fill="#0b2545" stroke="#3e6fb0" stroke-width="2"/><rect x="30" y="20" width="260" height="22" rx="8" fill="#13315c"/><circle cx="46" cy="31" r="4" fill="#8fd9d4"/><circle cx="60" cy="31" r="4" fill="#8fd9d4"/><rect x="48" y="60" width="70" height="70" rx="6" fill="#0f8b8d"/><rect x="130" y="60" width="144" height="12" rx="4" fill="#3e6fb0"/><rect x="130" y="82" width="110" height="10" rx="4" fill="#27466f"/><rect x="130" y="102" width="130" height="10" rx="4" fill="#27466f"/><rect x="48" y="142" width="226" height="22" rx="4" fill="#13315c"/></svg><p class="label-illus">Illustration, not a real screenshot</p></div>
+         <div class="project-art">
+    <img
+        src="images/student-portfolio.png"
+        alt="Screenshot of my Student Academic Management and Portfolio Website"
+        class="project-screenshot"
+    >
+</div> 
           <div class="project-body">
             <span class="badge">Working version: this website</span>
             <h2 style="margin-top:.6rem;font-size:1.4rem">Student Academic Management and Portfolio Website</h2>
