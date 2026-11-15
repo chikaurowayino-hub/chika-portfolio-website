@@ -8,12 +8,46 @@
    Paste a normal YouTube link in youtubeUrl, for example:
    "https://www.youtube.com/watch?v=XXXXXXXXXXX"            */
 const VIDEOS = [
-  { title: "Wastewater treatment education",        description: "Plain-language lessons on how wastewater is treated.", youtubeUrl: "" },
-  { title: "Brewery wastewater treatment processes", description: "How brewery effluent is handled in practice.",        youtubeUrl: "" },
-  { title: "Anaerobic wastewater treatment",         description: "How anaerobic reactors work and what affects them.",   youtubeUrl: "" },
-  { title: "My data science learning journey",       description: "Progress updates from my BSc Data Science studies.",   youtubeUrl: "" },
-  { title: "AI and environmental technology",        description: "Ideas for applying AI to environmental problems.",     youtubeUrl: "" },
-  { title: "Industrial process monitoring",          description: "Monitoring plant processes and spotting abnormalities.", youtubeUrl: "" }
+  {
+    title: "Why I Started Data Science Later in Life – It's Never Too Late",
+    description: "My decision to begin a new learning journey in Data Science later in life.",
+    youtubeUrl: "https://youtu.be/5t2TxlRYGDE"
+  },
+  {
+    title: "I Almost Quit Learning Data Science in My First Week",
+    description: "An honest reflection on the challenges of starting to learn Data Science.",
+    youtubeUrl: "https://youtu.be/oUg9aGBjQys"
+  },
+  {
+    title: "Starting Over Is Scary… Staying Stuck Is Worse",
+    description: "Why taking a new direction can be difficult but worthwhile.",
+    youtubeUrl: "https://youtu.be/TmWq-5KNnqo"
+  },
+  {
+    title: "What Nobody Tells You About Working and Studying at the Same Time",
+    description: "Balancing professional responsibilities with academic learning.",
+    youtubeUrl: "https://youtu.be/Z-siVCUF2b4"
+  },
+  {
+    title: "I Learned Python Variables and Felt Completely Lost",
+    description: "Sharing the realities of learning Python as a beginner.",
+    youtubeUrl: "https://youtu.be/tMewk8IUtiw"
+  },
+  {
+    title: "The Python Lesson That Finally Clicked",
+    description: "A learning milestone in my journey towards Data Science.",
+    youtubeUrl: "https://youtu.be/X9WO9yeYyos"
+  },
+  {
+    title: "NOBODY KNEW I WAS STRUGGLING",
+    description: "A personal reflection on the struggles behind starting over.",
+    youtubeUrl: "https://youtube.com/shorts/LUY_bNUosrY"
+  },
+  {
+    title: "I THOUGHT I WAS TOO LATE",
+    description: "Becoming a student again and discovering that it is not too late to start over.",
+    youtubeUrl: "https://youtube.com/shorts/Rq3FStWYyw4"
+  }
 ];
 
 /* ---- 2. PRESENTATIONS ------------------------------------
